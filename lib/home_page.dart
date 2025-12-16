@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
       }
 
       final publicUrl = Supabase.instance.client.storage
-          .from('Bucket_images')
+          .from('bucket_images')
           .getPublicUrl(filePath);
 
       setState(() {
